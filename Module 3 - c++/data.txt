@@ -1,0 +1,2 @@
+This text is already present
+This is new text
