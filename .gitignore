@@ -1,2 +1,4 @@
 *.o
 *.exe
+DBMS/student_info.sql
+DBMS/teacher_info.sql
