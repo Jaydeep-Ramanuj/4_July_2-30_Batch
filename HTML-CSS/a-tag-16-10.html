@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .spacer {
+        height: 800px;
+      }
+
+      #section-1,
+      #section-2,
+      #section-3 {
+        height: 600px;
+        font-size: 150px;
+      }
+
+      #section-1 {
+        background-color: tomato;
+      }
+      #section-2 {
+        background-color: teal;
+      }
+      #section-3 {
+        background-color: blueviolet;
+      }
+
+      .goto-link-1:active {
+        color: pink;
+      }
+      .goto-link-1:visited {
+        color: orange;
+      }
+      .amazon:visited {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Go to remote webpage -->
+
+    <a href="https://www.amazon.in" class="amazon">Go to amazon </a>
+    <br />
+    <a
+      href="https://www.amazon.in/Leader-Mountain-Bicycle-Without-Single/dp/B089M9HVQP/ref=s9_acsd_al_ot_c2_x_0_t?_encoding=UTF8&pf_rd_m=A21TJRUUN4KGV&pf_rd_s=merchandised-search-5&pf_rd_r=10JM771HA28YYZW13X91&pf_rd_p=e1e54aa2-3d38-4404-aa0b-e8f13f66c82e&pf_rd_t=&pf_rd_i=62174524031"
+      >Go to Mountain bike
+    </a>
+    <br />
+
+    <!-- Go to remote media -->
+    <a
+      href="https://m.media-amazon.com/images/S/aplus-media-library-service-media/d836887c-3a06-420c-b67d-f2cc6aa21b90.__CR0,0,3000,1856_PT0_SX970_V1___.jpg"
+      >Go to scout bike photo</a
+    >
+    <br />
+
+    <a href="https://i.gifer.com/fxr9.mp4"> Go to video </a>
+
+    <!-- Go to local files -->
+    <br />
+    <a href="html-intro-14-10.html" target="_blank">Go to html-intro file</a>
+
+    <!-- Go to different section of same file -->
+    <br />
+    <a href="#section-1" class="goto-link-1">Go to section 1 </a>
+    <br />
+    <a href="#section-2">Go to section 2 </a>
+    <br />
+    <a href="#section-3">Go to section 3 </a>
+
+    <div class="spacer"></div>
+    <div id="section-1">section-1</div>
+    <div id="section-2">section-2</div>
+    <div id="section-3">section-3</div>
+
+    <a href="#section-1">Go to top</a>
+
+    <!-- 1. Normal link
+    2.Visited link
+    3. Active link -->
+  </body>
+</html>
