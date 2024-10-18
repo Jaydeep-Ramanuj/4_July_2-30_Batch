@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* #name:hover::placeholder {
+        opacity: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter your name"
+          required
+          readonly
+          disabled
+          value="rajan"
+        />
+        <br />
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter your email"
+          value="some@gmail.com"
+          required
+        />
+        <br />
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="Enter your password"
+          required
+          minlength="8"
+          maxlength="16"
+          value="aaaaA!2#"
+          pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}"
+        />
+        <br />
+        <input type="number" name="" id="" placeholder="Enter your marks" />
+        <br /><input
+          type="date"
+          name=""
+          id=""
+          min="2020-01-01"
+          max="2024-12-12"
+        />
+        <br /><input type="time" name="" id="" />
+        <br />
+        <input type="datetime-local" name="" id="" />
+        <br /><input type="file" name="" id="" accept=".pdf" multiple />
+        <br />
+        <input type="range" name="" id="" step="10" />
+        <br /><input type="color" name="" id="" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Professional Information</legend>
+        <br />
+        <input type="week" name="" id="" />
+        <br />
+        <input type="month" name="" id="" />
+        <br />
+        <input
+          type="tel"
+          name=""
+          id=""
+          placeholder="Enter your phone number"
+          required
+          minlength="10"
+          maxlength="10"
+        />
+        <br />
+        <input type="url" name="" id="" placeholder="Enter your URL" />
+        <br />
+        <input type="search" name="" id="" />
+        <br />
+        <input type="checkbox" name="" id="" checked required />
+        <br />
+        <input type="radio" name="" id="" required />
+
+        <select name="" id="" required>
+          <option value="">Surat</option>
+          <option value="">Baroda</option>
+          <option value="" selected>Rajkot</option>
+          <option value="" disabled>Mumbai</option>
+        </select>
+
+        <textarea
+          name=""
+          id=""
+          cols="10"
+          rows="5"
+          placeholder="Enter your feedback"
+        ></textarea>
+      </fieldset>
+      <br /><input type="button" name="" id="" value="Apply" /> <br /><input
+        type="submit"
+        name=""
+        id=""
+      />
+
+      <br /><input type="reset" name="" id="" />
+      <button>Go live</button>
+    </form>
+  </body>
+</html>
