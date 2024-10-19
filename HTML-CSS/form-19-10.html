@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <table align="center">
+        <tr>
+          <th colspan="2">
+            <h2>Candidate Registration Form</h2>
+          </th>
+        </tr>
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td>
+            <input
+              type="text"
+              name=""
+              id="name"
+              minlength="2"
+              maxlength="15"
+              required
+              value="some"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td>
+            <input
+              type="text"
+              name=""
+              id="email"
+              required
+              value="some@gmail.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone: </label></td>
+          <td>
+            <input
+              type="tel"
+              name=""
+              id="phone"
+              minlength="10"
+              maxlength="10"
+              required
+              value="1123456789"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" required checked />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob">Date Of Birth</label>
+          </td>
+          <td>
+            <input
+              type="date"
+              name=""
+              id="dob"
+              required
+              min="1990-01-01"
+              max="2005-01-01"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Hobbies:</td>
+
+          <td>
+            <label for="coding">Coding</label>
+            <input type="checkbox" name="" id="" checked />
+            <br />
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" name="" id="" />
+            <br />
+            <label for="cycling">Cycling</label>
+            <input type="checkbox" name="" id="" />
+            <br />
+            <label for="music">Music</label>
+            <input type="checkbox" name="" id="" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="city">City:</label>
+          </td>
+
+          <td>
+            <select name="" id="">
+              <option value="">Surat</option>
+              <option value="" selected>Rajkot</option>
+              <option value="">Baroda</option>
+              <option value="">Ahmedabad</option>
+              <option value="" disabled>Mumbai</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="course">Course:</label>
+          </td>
+          <td>
+            <input type="text" name="" id="" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Collage / University name: </label>
+          </td>
+          <td>
+            <input type="text" name="" id="" required list="collage-list" />
+            <datalist id="collage-list">
+              <option value="Atmiya">Atmiya University</option>
+              <option value="Marwadi">Marwadi University</option>
+              <option value="Darshan">Darshan University</option>
+              <option value="RK">RK University</option>
+              <option value="Saurastra">Saurastra University</option>
+              <option value="Nirma">Nirma University</option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">CGPA:</label>
+          </td>
+          <td>
+            <input type="number" name="" id="" required min="6" max="10" / >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Resume:</label>
+          </td>
+          <td>
+            <input type="file" name="" id="" required accept=".pdf" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="">Tell us about yourself: </label>
+          </td>
+          <td>
+            <textarea name="" id=""></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button>Submit</button>
+          </td>
+          <td>
+            <input type="reset" name="" id="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
