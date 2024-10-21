@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Universal (*) selector, it is used to give style to all elements */
+
+      * {
+        font-weight: 600;
+      }
+
+      /* tag selector / type selector, it is used to give style to specific tag name selector */
+      p {
+        color: red;
+      }
+
+      /* group selector (,), it is used when we want to give same style to multiple selector */
+      p,
+      i {
+        font-size: 24px;
+      }
+      /* class selector (.), it is used to give style to specific elements, class can be used multiple times, an element can have multiple classes as well */
+      .p-style {
+        color: purple;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      /* id selector(#), it is used to uniquely identify an element, an id can't be used multiple times and an element can't have multiple ids  */
+
+      #special {
+        border: 1px solid black;
+      }
+
+      /* nth-child selector */
+      /* p:nth-child(2) {
+        color: purple;
+      } */
+
+      .child {
+        height: 50px;
+        width: 50px;
+        background-color: teal;
+        color: white;
+        border: 1px solid black;
+      }
+
+      /* .child:nth-child(1) {
+        color: red;
+      } */
+      /* .child:nth-child(n + 2) {
+        color: red;
+      } */
+      /* .child:nth-child(3n) {
+        color: red;
+      } */
+      /* .child:nth-last-child(2) {
+        color: red;
+      } */
+      /* .child:nth-child(odd) {
+        color: red;
+      } */
+      .child:nth-child(even) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is p tag</p>
+    <p class="p-style underline" id="special">This is 2nd p tag</p>
+    <p>This is 3rd p tag</p>
+
+    <i>This is i tag</i>
+    <i class="p-style">This is 2nd i tag</i>
+
+    <hr />
+
+    <div class="parent">
+      <div class="child">child1</div>
+      <div class="child">child2</div>
+      <div class="child">child3</div>
+      <div class="child">child4</div>
+      <div class="child">child5</div>
+      <div class="child">child6</div>
+    </div>
+
+    <hr />
+  </body>
+</html>
