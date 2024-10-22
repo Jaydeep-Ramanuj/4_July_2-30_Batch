@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* Absolute unit */
+        height: 300px;
+        width: 300px;
+
+        /* Relative unit */
+
+        /* % it depends on its parent  */
+        /* width: 50%; */
+
+        /* width: 60vw; */
+
+        background-color: tomato;
+      }
+
+      .inner-box {
+        /* vw viewport width, it depends on viewport width */
+        /* width: 20%; */
+        width: 60vw;
+        /* height: 30px; */
+        height: 30vh;
+        background-color: teal;
+      }
+
+      .parent {
+        padding: 20px;
+        border: 5px solid black;
+        /* font-size: 16px; */
+        font-size: 32px;
+      }
+      .child {
+        padding: 20px;
+        border: 5px solid red;
+        font-size: 1em;
+        font-size: 1.5em;
+        font-size: 0.8em;
+      }
+      /* html {
+        font-size: 48px;
+      } */
+      .sub-child {
+        padding: 20px;
+        border: 5px solid blue;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box"></div>
+    </div>
+
+    <div class="parent">
+      Parent
+      <div class="child">
+        Child
+        <div class="sub-child">Sub-Child</div>
+      </div>
+    </div>
+  </body>
+</html>
