@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 100px;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .box::before {
+        content: '';
+        height: 0%;
+        width: 5px;
+        border-radius: 24px;
+        background-color: teal;
+        position: absolute;
+        left: -10px;
+        transition: all 300ms;
+      }
+
+      .box:hover::before {
+        height: 100%;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 10px;
+      }
+      li::before {
+        /* content: '\27BB'; */
+        content: 'new';
+        padding: 2px;
+        background-color: lightgray;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: grey;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+      }
+
+      a::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        background-color: tomato;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+
+        transition: all 300ms;
+      }
+
+      a:hover::after {
+        width: 100%;
+      }
+
+      .container {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-position: top;
+
+        background-image: url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+        position: relative;
+        isolation: isolate;
+      }
+
+      .container::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.278);
+        z-index: -1;
+      }
+
+      input::placeholder {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+
+    <a href="#">Home</a>
+
+    <div class="container">Sanket</div>
+
+    <input type="text" name="" id="" placeholder="Enter your name " />
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+
+        transition: all 600ms;
+      }
+
+      .box:hover {
+        background-color: teal;
+        height: 500px;
+        border-radius: 50%;
+      }
+
+      #text:focus {
+        width: 500px;
+        outline-color: skyblue;
+      }
+
+      #check:checked {
+        outline: 2px solid red;
+      }
+
+      a:active {
+        color: yellow;
+      }
+
+      a:visited {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <input type="text" name="" id="text" />
+
+    <input type="checkbox" name="" id="check" />
+
+    <a href="https://fonts.google.com/selection/embed">Go to Google fonts </a>
+  </body>
+</html>
